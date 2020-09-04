@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav id={styles.mainNavigation}>
       <div className={styles.home}>
-        <a href="/portfolio">Arch</a>
+        <a href="/">Arch</a>
       </div>
       <div className={styles.sections}>
         <a href="/portfolio">Portfolio</a>
