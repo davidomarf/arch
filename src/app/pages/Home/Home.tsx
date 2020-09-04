@@ -2,6 +2,11 @@ import React from "react";
 import Hero from "./Hero";
 import styles from "./Home.module.scss";
 
+import paramourImg from "../../assets/img/home/image-hero-paramour.jpg";
+import seraphImg from "../../assets/img/home/image-hero-seraph.jpg";
+import federalImg from "../../assets/img/home/image-hero-federal.jpg";
+import trinityImg from "../../assets/img/home/image-hero-trinity.jpg";
+
 const Home = () => (
   <section className={styles.container}>
     <Hero
@@ -13,8 +18,7 @@ const Home = () => (
               "Project made for an art museum near Southwest London. Project Paramour is a " +
               "statement of bold, modern architecture."
           },
-          image:
-            "https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+          image: paramourImg
         },
         {
           info: {
@@ -24,8 +28,7 @@ const Home = () => (
               "transport people through time. The result is a fresh and futuristic model " +
               "inspired by space stations."
           },
-          image:
-            "https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+          image: seraphImg
         },
         {
           info: {
@@ -34,8 +37,7 @@ const Home = () => (
               "A sequel theme project for a tower originally built in the 1800s. We achieved " +
               "this with a striking look of brutal minimalism with modern touches."
           },
-          image:
-            "https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+          image: federalImg
         },
         {
           info: {
@@ -45,8 +47,7 @@ const Home = () => (
               "the middle of a city with a high earthquake frequency. For this project we used " +
               "curves to blend design and stability to meet our objectives."
           },
-          image:
-            "https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+          image: trinityImg
         }
       ]}
     />
