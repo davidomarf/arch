@@ -7,10 +7,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background-color;
-
-  font-size: $text-size;
-  letter-spacing: $text-spacing;
-  line-height: $text-line;
+  * {
+    font-size: $text-size;
+    letter-spacing: $text-spacing;
+    line-height: $text-line;
+  }
 }
 
 h1,
@@ -42,4 +43,8 @@ h4 {
   font-size: $h-size-4;
   letter-spacing: $h-spacing-4;
   line-height: $h-line-4;
+}
+
+button {
+  font-weight: bold;
 }
