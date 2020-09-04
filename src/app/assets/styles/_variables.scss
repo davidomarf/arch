@@ -1,6 +1,29 @@
 /* ------------------------------- Typography ------------------------------- */
 
-$doc-font-size: 15 !default;
+$doc-font-size: 15;
+
+$sans-serif: "Spartan", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+
+$h-size-1: 12.5rem;
+$h-spacing-1: -5ch;
+$h-line-1: 1em;
+
+$h-size-2: 5rem;
+$h-spacing-2: -2ch;
+$h-line-2: 1em;
+
+$h-size-3: 3.5rem;
+$h-spacing-3: -2ch;
+$h-line-3: 1em;
+
+$h-size-4: 1.125rem;
+$h-spacing-3: 0ch;
+$h-line-4: 1.389em;
+
+$text-size: 1rem;
+$text-spacing: 0ch;
+$text-line: 1.667em;
 
 /* --------------------------------- Colors --------------------------------- */
 
