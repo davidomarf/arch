@@ -1,0 +1,22 @@
+nav#mainNavigation {
+  margin: 3.5rem 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  div.home {
+    font-weight: bold;
+    margin-right: 5.9375rem;
+  }
+
+  div.sections {
+    :not(:last-child) {
+      margin-right: 3.5em;
+    }
+  }
+}

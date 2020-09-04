@@ -1,0 +1,15 @@
+@import "../assets/styles/variables";
+
+div.pageContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: $max-width;
+  max-width: 90%;
+  margin: auto;
+}
+
+div.contentContainer {
+  display: flex;
+  flex-direction: column;
+}
