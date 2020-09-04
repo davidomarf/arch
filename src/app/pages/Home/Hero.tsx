@@ -1,17 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./Hero.module.scss";
 import { Link } from "react-router-dom";
 
-const Hero = () => (
+type HeroProps = {
+  items: HeroItem[];
+};
+const Hero = ({ items }: HeroProps) => {
+  const [current, setCurrent] = useState(0);
+
+  return (
     <div className={styles.hero}>
-      <img src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"></img>
+      <img src={items[current].image} alt={items[current].info.title}></img>
       <HeroDescription
-        title="Project Paramour"
-        description="Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture."
+        title={items[current].info.title}
+        description={items[current].info.description}
+      />
+      <HeroNavigation
+        total={items.length}
+        current={current}
+        setCurrent={setCurrent}
       />
     </div>
-);
+  );
+};
+
+type HeroItem = {
+  info: HeroDescriptionProps;
+  image: string;
+};
 
 type HeroDescriptionProps = {
   title: string;
@@ -22,9 +39,38 @@ const HeroDescription = ({ title, description }: HeroDescriptionProps) => (
     <h2>{title}</h2>
     <p>{description}</p>
     <Link to="/portfolio" className={styles.portfolio}>
-      See Our Portfolio -->
+      See Our Portfolio
     </Link>
   </div>
 );
+
+type HeroNavigationProps = {
+  total: number;
+  current: number;
+  setCurrent: (index: number) => void;
+};
+const HeroNavigation = ({
+  total,
+  current,
+  setCurrent
+}: HeroNavigationProps) => {
+  const arr = [...Array(total).keys()];
+
+  return (
+    <div className={styles.navigation}>
+      {arr.map((e) => (
+        <div
+          key={e}
+          className={`${styles.squareButton} ${
+            current === e ? styles.active : ""
+          }`}
+          onClick={() => setCurrent(e)}
+        >
+          {e}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default Hero;
