@@ -58,5 +58,10 @@ div#footer {
     justify-content: center;
 
     background-color: $button-background-color;
+
+    &:hover {
+      background-color: $button-background-color-hover;
+      color: $inversed-text-color;
+    }
   }
 }
