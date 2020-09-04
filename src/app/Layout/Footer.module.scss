@@ -1,0 +1,57 @@
+@import "../assets/styles/variables";
+
+$footer-size: 12.5rem;
+$button-width: 15.75rem;
+
+div#footer {
+  position: relative;
+
+  height: $footer-size;
+
+  background-color: $footer-background-color;
+
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+
+    height: 100%;
+    width: calc(#{$button-width} / 2);
+    background-color: $background-color;
+  }
+
+  div.home {
+    height: 100%;
+    width: $footer-size;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $footer-background-color-logo;
+
+    font-weight: bold;
+  }
+
+  div.sections {
+    margin-left: 5.9375rem;
+
+    :not(:last-child) {
+      margin-right: 3.5em;
+    }
+  }
+
+  button.portfolio {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+    width: $button-width;
+
+    padding: $button-y-padding 0;
+  }
+}
