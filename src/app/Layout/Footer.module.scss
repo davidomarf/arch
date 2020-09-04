@@ -32,9 +32,11 @@ div#footer {
     justify-content: center;
     align-items: center;
 
-    background-color: $footer-background-color-logo;
+    background-color: $footer-logo-background-color;
 
-    font-weight: bold;
+    a svg {
+      fill: $footer-logo-color;
+    }
   }
 
   div.sections {
