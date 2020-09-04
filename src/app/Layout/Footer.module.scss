@@ -32,9 +32,11 @@ div#footer {
     justify-content: center;
     align-items: center;
 
-    background-color: $footer-background-color-logo;
+    background-color: $footer-logo-background-color;
 
-    font-weight: bold;
+    a svg {
+      fill: $footer-logo-color;
+    }
   }
 
   div.sections {
@@ -63,6 +65,13 @@ div#footer {
     &:hover {
       background-color: $button-background-color-hover;
       color: $inversed-text-color;
+    }
+
+    svg {
+      margin-left: 1.5rem;
+    }
+    svg g {
+      stroke: $inversed-text-color;
     }
   }
 }

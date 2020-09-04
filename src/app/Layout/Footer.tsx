@@ -1,12 +1,16 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import { Link } from "react-router-dom";
+import { ReactComponent as ArchLogo } from "../assets/img/logo.svg";
+import { ReactComponent as ArrowIcon } from "../assets/img/icons/icon-arrow.svg";
 
 const Footer = () => {
   return (
     <div id={styles.footer}>
       <div className={styles.home}>
-        <Link to="/portfolio">Arch</Link>
+        <Link to="/">
+          <ArchLogo />
+        </Link>
       </div>
       <div className={styles.sections}>
         <Link to="/portfolio">Portfolio</Link>
@@ -14,7 +18,7 @@ const Footer = () => {
         <Link to="/contact">Contact</Link>
       </div>
       <Link to="/portfolio" className={styles.portfolio}>
-        See Our Portfolio -->
+        See Our Portfolio <ArrowIcon />
       </Link>
     </div>
   );

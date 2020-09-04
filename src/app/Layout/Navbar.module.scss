@@ -32,6 +32,9 @@ nav#mainNavigation {
   div.home {
     font-weight: bold;
     margin-right: 5.9375rem;
+    svg {
+      fill: $strong-text-color;
+    }
   }
 
   div.sections {

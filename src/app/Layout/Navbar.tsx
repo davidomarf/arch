@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 import { Link, useLocation } from "react-router-dom";
+import { ReactComponent as ArchLogo } from "../assets/img/logo.svg";
 
 const NavBar = () => {
   let { pathname } = useLocation();
@@ -8,7 +9,9 @@ const NavBar = () => {
   return (
     <nav id={styles.mainNavigation}>
       <div className={styles.home}>
-        <Link to="/">Arch</Link>
+        <Link to="/">
+          <ArchLogo />
+        </Link>
       </div>
       <div className={styles.sections}>
         <Link to="/portfolio" className={getClass(pathname, "/portfolio")}>

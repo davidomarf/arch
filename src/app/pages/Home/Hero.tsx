@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import styles from "./Hero.module.scss";
 import { Link } from "react-router-dom";
+import { ReactComponent as ArrowIcon } from "../../assets/img/icons/icon-arrow.svg";
 
 type HeroProps = {
   items: HeroItem[];
@@ -39,7 +40,7 @@ const HeroDescription = ({ title, description }: HeroDescriptionProps) => (
     <h2>{title}</h2>
     <p>{description}</p>
     <Link to="/portfolio" className={styles.portfolio}>
-      See Our Portfolio
+      See Our Portfolio <ArrowIcon />
     </Link>
   </div>
 );
