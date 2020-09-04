@@ -48,3 +48,12 @@ h4 {
 button {
   font-weight: bold;
 }
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
