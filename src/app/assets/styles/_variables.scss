@@ -25,6 +25,12 @@ $text-size: 1rem;
 $text-spacing: 0ch;
 $text-line: 1.667em;
 
+/* --------------------------------- Sizing --------------------------------- */
+
+$button-x-padding: 1rem;
+$button-y-padding: 1.46875rem;
+$square-button-size: 5rem;
+
 /* --------------------------------- Colors --------------------------------- */
 
 /* Palette */
@@ -91,3 +97,10 @@ $accent-button-background-color-active: $very-dark-blue;
 $accent-button-text-color: $medium-grey;
 $accent-button-text-color-hover: $medium-grey;
 $accent-button-text-color-active: $white;
+
+/* Breakpoints */
+
+$small: 375px;
+$medium: 768px;
+$large: 1110px;
+$max-width: $large;
