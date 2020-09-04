@@ -66,5 +66,12 @@ div#footer {
       background-color: $button-background-color-hover;
       color: $inversed-text-color;
     }
+
+    svg {
+      margin-left: 1.5rem;
+    }
+    svg g {
+      stroke: $inversed-text-color;
+    }
   }
 }
