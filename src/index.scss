@@ -1,13 +1,45 @@
+@import "./app/assets/styles/fonts";
+@import "./app/assets/styles/variables";
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: $sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $background-color;
+
+  font-size: $text-size;
+  letter-spacing: $text-spacing;
+  line-height: $text-line;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: $h-size-1;
+  letter-spacing: $h-spacing-1;
+  line-height: $h-line-1;
+}
+
+h2 {
+  font-size: $h-size-2;
+  letter-spacing: $h-spacing-2;
+  line-height: $h-line-2;
+}
+
+h3 {
+  font-size: $h-size-3;
+  letter-spacing: $h-spacing-3;
+  line-height: $h-line-3;
+}
+
+h4 {
+  font-size: $h-size-4;
+  letter-spacing: $h-spacing-4;
+  line-height: $h-line-4;
 }
