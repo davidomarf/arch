@@ -6,15 +6,15 @@ $sans-serif: "Spartan", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
 $h-size-1: 12.5rem;
-$h-spacing-1: -5ch;
+$h-spacing-1: 0ch;
 $h-line-1: 1em;
 
 $h-size-2: 5rem;
-$h-spacing-2: -2ch;
+$h-spacing-2: 0ch;
 $h-line-2: 1em;
 
 $h-size-3: 3.5rem;
-$h-spacing-3: -2ch;
+$h-spacing-3: 0ch;
 $h-line-3: 1em;
 
 $h-size-4: 1.125rem;
@@ -104,4 +104,5 @@ $accent-button-text-color-active: $white;
 $small: 375px;
 $medium: 768px;
 $large: 1110px;
-$max-width: $large;
+$x-large: 1280px;
+$max-width: $x-large;
