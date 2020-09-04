@@ -1,0 +1,66 @@
+/* --------------------------------- Colors --------------------------------- */
+
+/* Palette */
+$very-dark-blue: #1b1d23;
+$dark-grey: #60636d;
+$medium-grey: #7d828f;
+$light-grey: #c8ccd8;
+$very-light-grey: #eeeff4;
+$white: #ffffff;
+$red: #df5656;
+
+/* Backgrounds */
+$background-color: $white;
+$footer-background-color: $very-light-grey;
+$footer-background-color-logo: $very-dark-blue;
+
+/* Text */
+$text-color: $dark-grey;
+$inversed-text-color: $white;
+$strong-text-color: $very-dark-blue;
+$muted-text-color: $light-grey;
+$light-text-color: $very-light-grey;
+
+$link-color: $medium-grey;
+$strong-text-color: $very-dark-blue;
+
+$slope-text-color: $muted-text-color;
+
+$h1-color: $light-text-color;
+$h2-color: $strong-text-color;
+
+$error-color: $red;
+
+/* Elements */
+$image-title-color: $inversed-text-color;
+$image-number-color: transparentize($inversed-text-color, 0.5);
+$image-description-color: transparentize($inversed-text-color, 0.25);
+
+$member-image-overlay: transparentize($very-dark-blue, 0.5);
+$member-image-social: $inversed-text-color;
+$member-name-color: $strong-text-color;
+$member-position-color: $text-color;
+
+$contact-address-color: $muted-text-color;
+$contact-button-color: $strong-text-color;
+
+$form-placeholder-color: $light-text-color;
+$form-value-color: $strong-text-color;
+$form-error-placeholder-color: transparentize($error-color, 0.5);
+$form-error-message-color: $error-color;
+
+$button-background-color: $very-dark-blue;
+$button-background-color-hover: $dark-grey;
+$button-background-color-active: $light-grey;
+
+$button-text-color: $white;
+$button-text-color-hover: $white;
+$button-text-color-active: $white;
+
+$accent-button-background-color: $white;
+$accent-button-background-color-hover: $very-light-grey;
+$accent-button-background-color-active: $very-dark-blue;
+
+$accent-button-text-color: $medium-grey;
+$accent-button-text-color-hover: $medium-grey;
+$accent-button-text-color-active: $white;
