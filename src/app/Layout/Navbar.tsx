@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import styles from "./Navbar.module.scss";
 import { Link, useLocation } from "react-router-dom";
 
