@@ -11,8 +11,8 @@ const Hero = ({ items }: HeroProps) => {
   const [current, setCurrent] = useState(0);
 
   return (
-    <div className={styles.hero}>
-      <img src={items[current].image} alt={items[current].info.title}></img>
+    <div className={styles.hero}
+    style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${items[current].image})`}}>
       <HeroDescription
         title={items[current].info.title}
         description={items[current].info.description}

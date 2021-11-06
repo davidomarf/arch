@@ -7,7 +7,8 @@ div.hero {
   justify-content: center;
   display: flex;
   overflow: visible;
-  background-color: black;
+  background-size: cover;
+  background-position: center;
 
   img {
     flex: 1;
@@ -74,6 +75,12 @@ div.navigation {
     color: $accent-button-text-color;
 
     cursor: pointer;
+
+    &:hover {
+      background-color: $accent-button-background-color-hover;
+      color: $accent-button-text-color-hover;
+    }
+
     &.active {
       background-color: $accent-button-background-color-active;
       color: $accent-button-text-color-active;
