@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables";
+
+.description {
+  width: 445px;
+  margin-top: -1.5rem;
+  margin-left: 12rem;
+
+  h3 + p {
+    margin-top: 56px;
+  }
+
+  p {
+    line-break: 2;
+  }
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  bottom: calc(50% + 3rem);
+  transform: translateY(50%);
+  height: 568px;
+  width: 350px;
+
+  background-size: cover;
+  background-position: center;
+
+  z-index: -1;
+}
