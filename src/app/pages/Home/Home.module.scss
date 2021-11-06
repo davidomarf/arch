@@ -2,9 +2,7 @@
 
 section.container {
   position: relative;
+  margin-bottom: 6.333rem;
   height: calc(95vh - 7rem - 25px);
-
-  + section.container {
-    margin-top: 6.333rem;
-  }
+  max-height: 720px;
 }
